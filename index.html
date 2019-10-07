@@ -16,12 +16,10 @@
         function show1() {
             var ischecked = document.getElementById('MustCheck').checked;
             if (!ischecked) {
-                document.getElementById('ans').innerHTML="請勾選同意";
+                document.getElementById('ans').innerHTML = "請勾選同意";
                 $('#myModal').modal();
-            }
-            else
-            {
-                document.getElementById('ans').innerHTML="登入成功";
+            } else {
+                document.getElementById('ans').innerHTML = "登入成功";
                 $('#myModal').modal();
             }
         }
@@ -37,7 +35,13 @@
                 <div class="card">
                     <div class="card-head bg-primary text-white " style="font-size: 25px">登入系統</div>
                     <div class="card-body">
-                        <a href="new.html" type="botton" >註冊新帳號</a>
+                        <div class="row">
+                            <div class="col-8"></div>
+                            <div class="col-3">
+                                <a href="new.html" type="botton" class="btn btn-danger">註冊新帳號</a>
+                            </div>
+                        </div>
+
                         <div>
                             <label>姓名 : </label>
                             <input type="text" class="form-control" name="account" placeholder="請輸入姓名" size="10">
